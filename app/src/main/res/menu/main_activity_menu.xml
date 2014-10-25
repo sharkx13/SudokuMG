@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+
+    <!-- nowe sudoku [New Sudoku] -->
+    <item android:id="@+id/new_sudoku_menu_item"
+        android:title="New Sudoku"
+        android:showAsAction="never"
+        android:onClick="NewSudokuMenuItemOnClick"
+        android:icon="@android:drawable/ic_media_next"/>
+
+    <!-- rozwiaz sudoku [ Solve ] -->
+    <item android:id="@+id/solve_menu_item"
+        android:title="Solve this puzzle"
+        android:showAsAction="never"
+        android:onClick="SolveMenuItemOnClick"/>
+
+    <!-- pomoc [Help] -->
+    <item android:id="@+id/help_menu_item"
+        android:title="@string/help_menu_item_string"
+        android:showAsAction="never"
+        android:onClick="HelpMenuItemOnClick"/>
+
+    <!-- o aplikacji [About] -->
+    <item android:id="@+id/about_app_menu_item"
+        android:title="@string/about_app_menu_item_string"
+        android:showAsAction="never"
+        android:onClick="AboutAppMenuItemOnClick"/>
+</menu>
