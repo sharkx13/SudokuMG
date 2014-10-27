@@ -6,6 +6,8 @@ import android.util.Log;
 
 /**
  * Created by Mateusz Glembin on 2014-10-25.
+ *
+ * Klasa obslugujaca plansze sudoku
  */
 public class Sudoku implements Parcelable {
     private static final String TAG = "Sudoku";
@@ -77,6 +79,7 @@ public class Sudoku implements Parcelable {
     }
 
     public Sudoku(int diff, int seed) {
+        makePuzzle(diff);
         Log.v(TAG, "Sudoku(diff,seed) - not implemented");
         throw new RuntimeException();
     }
@@ -140,6 +143,7 @@ public class Sudoku implements Parcelable {
             Log.v(TAG, "not implemented");
     }
 
+    // TODO
     private boolean testWin() {
         // sprawdzanie czy wszystkie pola sa zajete przez liczby
         for (int i=0; i<9; i++) {
