@@ -9,7 +9,6 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
-import org.jetbrains.annotations.NotNull;
 
 
 public class MainActivity extends Activity {
@@ -39,7 +38,7 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    protected void onSaveInstanceState(@NotNull Bundle outState) {
+    protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         Log.v(TAG, "Zapisuje obiekt");
         if (sudoku != null) {
@@ -48,7 +47,7 @@ public class MainActivity extends Activity {
     }
 
     @Override
-    protected void onRestoreInstanceState(@NotNull Bundle savedInstanceState) {
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         Log.v(TAG, "Odtwarzam obiekt");
         sudoku = savedInstanceState.getParcelable("glembin.mateusz.sudoku.Sudoku");
